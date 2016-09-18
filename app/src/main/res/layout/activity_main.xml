@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="net.lazytap.MainActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Chores / Work\n0"
+            android:id="@+id/chores"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_dark"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"
+            android:onClick="modifyCount"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Study / Edu\n0"
+            android:id="@+id/study"
+            android:layout_weight="1"
+            android:background="@android:color/holo_green_dark"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"
+            android:onClick="modifyCount"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Fun / Play\n0"
+            android:id="@+id/fun"
+            android:layout_weight="1"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"
+            android:onClick="modifyCount"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Wasted\n0"
+            android:id="@+id/wasted"
+            android:layout_weight="1"
+            android:background="@android:color/holo_red_light"
+            android:layout_margin="10dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="18dp"
+            android:onClick="modifyCount"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decrease"
+            android:id="@+id/decrease"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            android:switchPadding="10dp"
+            android:layout_marginLeft="10dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset"
+                android:id="@+id/reset"
+                android:layout_marginRight="10dp"
+                android:onClick="clearCounts"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
